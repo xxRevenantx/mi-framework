@@ -99,7 +99,7 @@
                   </div>
                 </div>
                 <div class="mb-3">
-                  <button class="btn btn-primary d-grid w-100" type="submit">Iniciar sesión </i></button>
+                  <button class="btn btn-primary d-grid w-100" type="submit">Iniciar </i></button>
                 </div>
               </form>
             </div>
