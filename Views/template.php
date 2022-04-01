@@ -22,6 +22,9 @@ $rutaLocal = Ruta::rutaCtr();
     <link rel="stylesheet" href="<?php echo $rutaLocal ?>Views/css/demo.css" />
     <link rel="stylesheet" href="<?php echo $rutaLocal ?>Views/css/page-auth.css" />
 
+    <!-- MIS ESTILOS-->
+     <link rel="stylesheet" href="<?php echo $rutaLocal ?>Views/css/my-styles.css" />
+
       <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -42,7 +45,14 @@ $rutaLocal = Ruta::rutaCtr();
 
 
 <?php
+
+
+
+
 if(isset($_SESSION['validar']) && $_SESSION['validar'] == true){
+
+
+
 
     echo ' <div class="layout-wrapper layout-content-navbar">
             <div class="layout-container">';

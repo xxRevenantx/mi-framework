@@ -28,6 +28,8 @@ let login  = (e) => {
         if(data.response == "true"){
             let button =  e.target[2];
             button.setAttribute("disabled","");
+            e.target.correo.setAttribute("disabled","");
+            e.target.password.setAttribute("disabled","");
             swalMixin("top","success","Redireccionando...");   
             
               

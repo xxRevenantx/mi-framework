@@ -1,6 +1,6 @@
 <?php
 
-session_start();
-session_destroy();
+Funciones::swalMixin("top","success","Saliendo...");
 
-header("Location:./");
+session_destroy();
+echo '<script>window.location = "'.$rutaLocal.'"</script>';
