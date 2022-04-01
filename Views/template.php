@@ -1,5 +1,6 @@
 <?php
-
+// Iniciamos sesión en la plantilla
+ session_start();
 //Cambiar ya que esté en producción
 //"http://localhost/mi-framework/";
 $rutaLocal = Ruta::rutaCtr();
@@ -41,7 +42,7 @@ $rutaLocal = Ruta::rutaCtr();
 
 
 <?php
-// if(isset($_SESSION['validar']) && $_SESSION['validar'] == true){
+if(isset($_SESSION['validar']) && $_SESSION['validar'] == true){
 
     echo ' <div class="layout-wrapper layout-content-navbar">
             <div class="layout-container">';
@@ -53,7 +54,7 @@ $rutaLocal = Ruta::rutaCtr();
     if(isset($_GET["url"])){
      $url = explode("/", $_GET["url"]);
 
-     if($url[0] == "inicio"){
+     if($url[0] == "inicio" || $url[0] == "logout"){
          include 'modules/'.$url[0].'.php';
      }else if($url[0] == "crear"){
         include 'modules/mvcx/'.$url[0].'.php';
@@ -67,9 +68,9 @@ $rutaLocal = Ruta::rutaCtr();
     ';
     
     
-// }else{
-//         include "modules/login.php";
-//     }
+}else{
+        include "modules/login.php";
+    }
 
 include 'modules/footer.php';
 ?>

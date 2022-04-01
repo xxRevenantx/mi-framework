@@ -69,13 +69,14 @@
               <h4 class="mb-2 text-center">Bienvenido 👋</h4>
               <p class="mb-4 text-center">Por favor, inicia sesión</p>
 
-              <form id="formAuthentication" class="mb-3" action="index.html" method="POST">
+              <form id="login" class="mb-3" method="POST">
                 <div class="mb-3">
                   <label for="email" class="form-label">Email</label>
                   <input
-                    type="text"
+                    type="email"
                     class="form-control"
                     id="email"
+                    name="correo"
                     name="email-username"
                     placeholder="Correo electrónico"
                     autofocus
@@ -90,6 +91,7 @@
                     <input
                       type="password"
                       id="password"
+                      name="password"
                       class="form-control"
                       name="password"
                       placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"

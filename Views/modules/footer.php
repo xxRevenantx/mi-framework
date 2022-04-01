@@ -7,3 +7,7 @@
 
     <script src="<?php echo $rutaLocal?>Views/js/menu.js"></script>
     <script src="<?php echo $rutaLocal?>Views/js/main.js"></script>
+
+    <!-- SCRIPT PERSONALIZADOS -->
+    <script src="<?php echo $rutaLocal?>Views/js/ajax/login.js"></script>
+    <script src="<?php echo $rutaLocal?>Views/js/functions.js"></script>
